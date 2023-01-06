@@ -1,0 +1,13 @@
+type Query {
+  """
+  Result typed as JSON since it has fields ["-N6rOmxa7vOOTpZZSllL", "-N6rQgCkbLPB1xElUchT", "-N6rSJ4xI3_Cq7u58Wh_", "-N6rSZB4AoMAwrDnm2jF", "-N6rTRzW_JrkHQMdt5QA"] that are invalid graphql identifiers
+  """
+  myQuery: JSON
+    @rest(
+      endpoint: "https://ups-clone-bd91c-default-rtdb.asia-southeast1.firebasedatabase.app/customers.json"
+      headers: [
+        { name: "authentication", value: "$authentication_a785d8658e;" }
+      ]
+      configuration: "curl_import_config"
+    )
+}

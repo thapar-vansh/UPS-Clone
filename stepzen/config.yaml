@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_a785d8658e: hrazdan::stepzen.net+1000::391a230bf1b184cf0378f669fff520e097c0e69a301bb26c2bb64598e41c5920
