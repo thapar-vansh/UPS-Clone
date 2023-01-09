@@ -47,14 +47,13 @@ const CustomerScreen = () => {
         onChangeText={setInput}
         containerStyle={tw('bg-white pt-5 pb-0 px-10')}
       />
-      {data?.getCustomers.map(
-        ({ name: ID, value: { email, name } }: CustomerResponse) => (
-          <CustomerCard key={ID} email={email} name={name} userId={ID} />
+      {data?.getCustomers
+        ?.filter((customer: CustomerList) =>
+          customer.value.name.includes(input)
         )
-      )}
-      <CustomerCard userId={''} name={''} email={''}></CustomerCard>
-      <CustomerCard userId={''} name={''} email={''}></CustomerCard>
-      <CustomerCard userId={''} name={''} email={''}></CustomerCard>
+        .map(({ name: ID, value: { email, name } }: CustomerResponse) => (
+          <CustomerCard key={ID} email={email} name={name} userId={ID} />
+        ))}
     </ScrollView>
   )
 }

@@ -14,6 +14,13 @@ type CustomerResponse = {
   value: Customer
 }
 
+type Item = {
+  item_id
+  price
+  name
+  quantity
+}
+
 type Order = {
   carrier: string
   createdAt: date

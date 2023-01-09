@@ -15,12 +15,12 @@ export const GET_ORDERS = gql`
   query MyQuery {
     getOrders {
       value {
-        address
+        Address
         carrier
-        city
+        City
         createdAt
-        lat
-        long
+        Lat
+        Lng
         shippingCost
         trackingId
         trackingItems {
@@ -40,4 +40,3 @@ export const GET_ORDERS = gql`
     }
   }
 `
-
