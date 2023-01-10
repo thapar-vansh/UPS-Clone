@@ -5,32 +5,30 @@ Clone of the UPS delivery app made using react-native , typescript and stepzen f
 
 
 ## Run Locally
+Clone the repository :- https://github.com/thapar-vansh/UPS-Clone.git
 
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
+#### Install the dependencies using
 
 ```bash
-  cd my-project
+  npm install 
 ```
-
-Install dependencies
+#### Start the app using 
 
 ```bash
-  npm install
+  expo start
 ```
 
-Start the server
+#### To build the css file 
 
 ```bash
-  npm run start
+  npm run dev:tailwind
 ```
 
+#### Start up stepzen using
 
+```bash
+  stepzen start
+```
 ## Tech Stack
 
 **Client:** React-Native, TailwindCSS , Apollo Client
