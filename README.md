@@ -27,6 +27,7 @@ Clone the repository :- https://github.com/thapar-vansh/UPS-Clone.git
 #### Start up stepzen using
 
 ```bash
+  cd stepzen
   stepzen start
 ```
 ## Tech Stack
